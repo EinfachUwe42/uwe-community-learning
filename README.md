@@ -8,5 +8,5 @@ Twitch https://twitch.tv/einfachuwe42
 
 You can run your application using:
 ```shell script
-echo "Rein da!"
+ ./gradlew run
 ```
