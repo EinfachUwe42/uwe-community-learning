@@ -9,11 +9,28 @@ public class App {
     public String getGreeting() {
         return "Hello World!";
     }
+    public static String[] words = {
+            "schlechteste blödste CODMaschine coolste GAFFER ist groß schön der Geld Kaffee letzte Limo Omlett Abfall!"
+    };
+    public static void thirdWords(String[] sentences) {
+        for (String sentence : sentences) {
+            String[] words = sentence.split(" ");
+            StringBuilder thirdWord = new StringBuilder();
 
+            for (int i = 0; i < words.length; i++) {
+                if ((i + 1) % 3 == 0) {
+                    thirdWord.append(words[i]).append(" ");
+                }
+            }
+            System.out.println(thirdWord.toString().trim());
+        }
+    }
     public static void main(String[] args) {
 
         System.out.println("Hello World!");
         System.out.println("Stamer_d war hier!");
         System.out.println("Tizuplay2 war hier!");
+
+        thirdWords(words);
     }
 }
