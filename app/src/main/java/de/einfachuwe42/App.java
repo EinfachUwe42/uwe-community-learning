@@ -32,5 +32,7 @@ public class App {
         System.out.println("Tizuplay2 war hier!");
 
         thirdWords(words);
+        Test1 test1 = new Test1();
+        test1.start();
     }
 }
